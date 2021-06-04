@@ -1,0 +1,18 @@
+.blockquote {
+  margin: 3.3rem 0 6.4rem 0;
+}
+
+blockquote {
+  padding-left: 1.6rem;
+  border-left: 0.4rem solid var(--gray30);
+  line-height: 2.4rem;
+}
+
+blockquote p {
+  font: var(--headline3);
+  font-weight: normal;
+}
+
+.blockquote blockquote p span {
+  color: var(--gray);
+}

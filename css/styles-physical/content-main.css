@@ -1,0 +1,43 @@
+pre {
+  background: var(--yellow);
+  padding: 4rem;
+  font-family: "Roboto";
+  line-height: 24px;
+  color: black;
+}
+
+.section-content div {
+  margin-bottom: 4rem;
+}
+
+.section-content {
+  counter-reset: titleList;
+}
+
+.section-content div li {
+  margin-left: 1.7rem;
+}
+
+.section-content div h3 {
+  counter-increment: titleList;
+  margin: 1.6rem 0;
+  position: relative;
+}
+
+.section-content div h3::before {
+  content: counter(titleList) ". ";
+}
+
+.section-content ul li {
+  margin-bottom: 1.6rem;
+}
+
+.section-content .image,
+.section-content .image img {
+  width: 100%;
+}
+
+.concepts div p:first-of-type,
+.box-model div p:first-of-type {
+  margin-bottom: 1.6rem;
+}

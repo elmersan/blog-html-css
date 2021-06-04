@@ -1,0 +1,19 @@
+.hero {
+  background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0.3),
+      transparent
+    ),
+    url("../../images/pattern.png");
+  height: 35rem;
+}
+
+header,
+header p {
+  font: var(--body2);
+}
+
+summary {
+  font: var(--button);
+  color: var(--gray);
+}

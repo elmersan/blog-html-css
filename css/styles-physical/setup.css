@@ -1,0 +1,18 @@
+.setup h2 {
+  font: var(--headline2);
+}
+
+.setup div div.setup-image {
+  width: 8rem;
+  height: 8rem;
+  margin: 0;
+}
+
+.setup img {
+  width: 100%;
+}
+
+.setup h3 {
+  font: var(--headline3);
+  font-weight: normal;
+}

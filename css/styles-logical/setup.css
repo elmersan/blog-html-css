@@ -1,0 +1,17 @@
+.setup h2 {
+  font: var(--headline2);
+}
+
+.setup-image {
+  width: 8rem;
+  height: 8rem;
+}
+
+.setup img {
+  width: 100%;
+}
+
+.setup h3 {
+  font: var(--headline3);
+  font-weight: normal;
+}

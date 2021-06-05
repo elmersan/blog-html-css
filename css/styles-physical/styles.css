@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -29,6 +30,7 @@ html {
   --gray20: #424242;
   --gray: #616161;
   --yellow: #fec62e;
+  --white: #fff;
 
   /* config */
   --border-radius: 4px;
@@ -58,12 +60,15 @@ h3 {
   font: var(--headline3);
   font-weight: normal;
   padding-bottom: 0.8rem;
+  position: sticky;
+  top: 0;
+  background: var(--white);
 }
 
 h3::after {
   content: "";
   background: var(--gray30);
-  width: 3.2rem;
+  width: 10rem;
   height: 0.4rem;
   display: block;
   position: absolute;
@@ -76,6 +81,12 @@ hr {
 }
 
 .wrapper {
-  max-inline-size: 90.2rem;
+  max-inline-size: 70rem;
   margin: auto;
+}
+
+@media screen and (min-width: 1420px) {
+  .wrapper {
+    max-inline-size: 90.2rem;
+  }
 }

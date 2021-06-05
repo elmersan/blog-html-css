@@ -5,41 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>El blog de Elmer Saan</title>
-    <link rel="stylesheet" href="./css/styles-physical/styles.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
+    /> -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/styles-logical/styles.css" />
   </head>
   <body>
     <section class="hero"></section>
-    <header>
-      <nav>
-        <p>CONTENIDO</p>
-        <details open>
-          <summary>Setup</summary>
-          <ol>
-            <li><a href="#chrome">Google Chrome</a></li>
-            <li><a href="#vsc">Visual Studio Code</a></li>
-            <li><a href="#figma">Figma</a></li>
-            <li><a href="#github">GitHub</a></li>
-          </ol>
-        </details>
-        <details open>
-          <summary>Conceptos esenciales del Desarrollo Web</summary>
-          <ol>
-            <li><a href="#html">Qué es HTML</a></li>
-            <li><a href="#etiquetas">Etiquetas</a></li>
-            <li><a href="#dom">DOM</a></li>
-            <li><a href="#semantica">Semántica</a></li>
-            <li><a href="#atributos">Atributos</a></li>
-            <li><a href="#css">Qué es CSS</a></li>
-          </ol>
-        </details>
-      </nav>
-    </header>
-    <!-- header -->
+    <div class="header">
+      <div class="wrapper">
+        <div class="header-content">
+          <header>
+            <nav>
+              <p>CONTENIDO</p>
+              <details open>
+                <summary>Setup</summary>
+                <ol>
+                  <li><a href="#chrome">Google Chrome</a></li>
+                  <li><a href="#vsc">Visual Studio Code</a></li>
+                  <li><a href="#figma">Figma</a></li>
+                  <li><a href="#github">GitHub</a></li>
+                </ol>
+              </details>
+              <details open>
+                <summary>Conceptos esenciales del Desarrollo Web</summary>
+                <ol>
+                  <li><a href="#html">Qué es HTML</a></li>
+                  <li><a href="#etiquetas">Etiquetas</a></li>
+                  <li><a href="#dom">DOM</a></li>
+                  <li><a href="#semantica">Semántica</a></li>
+                  <li><a href="#atributos">Atributos</a></li>
+                  <li><a href="#css">Qué es CSS</a></li>
+                </ol>
+              </details>
+            </nav>
+          </header>
+          <!-- header -->
+        </div>
+      </div>
+    </div>
 
     <main class="main">
       <div class="wrapper">
@@ -59,7 +71,7 @@
             <div id="google-chrome">
               <div class="setup-image">
                 <img
-                  src="./images/google-chrome.png"
+                  src="./images/chrome2.png"
                   alt="logo de google chrome"
                   title="logo de google chrome"
                 />
@@ -75,7 +87,7 @@
             <div id="vsc">
               <div class="setup-image">
                 <img
-                  src="./images/visual-studio-code.png"
+                  src="./images/visual-studio-code2.png"
                   alt="logo del editor de código Visual Studio Code"
                   title="logo del editor de código Visual Studio Code"
                 />
@@ -96,7 +108,7 @@
             <div id="figma">
               <div class="setup-image">
                 <img
-                  src="./images/figma.png"
+                  src="./images/figma2.png"
                   alt="logo de figma"
                   title="logo de figma"
                 />
@@ -113,7 +125,7 @@
             <div id="github">
               <div class="setup-image">
                 <img
-                  src="./images/github.png"
+                  src="./images/git-hub2.png"
                   alt="logo de GitHub"
                   title="logo de GitHub"
                 />
@@ -149,19 +161,19 @@
                 estructura del contenido.
               </p>
               <pre>
-               
-    &lt;!DOCTYPE html&gt;
-    &lt;html lang=&quot;en&quot;&gt;
-    &lt;head&gt;
-    &lt;meta charset=&quot;UTF-8&quot;&gt;
-    &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-    &lt;title&gt;Document&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-    
-    &lt;/body&gt;
-    &lt;/html&gt;
-              </pre>
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre
+              >
             </div>
             <div id="etiquetas">
               <h3>Etiquetas</h3>
@@ -180,7 +192,7 @@
                 serán parte de tu día a día como Software Developer.
               </p>
             </div>
-            <div id="DOM">
+            <div id="dom">
               <h3>DOM</h3>
               <p>
                 El Document Object Model es una estructura de árbol que
@@ -223,7 +235,7 @@
                 etiquetas como src
               </p>
             </div>
-            <div id="CSS">
+            <div id="css">
               <h3>CSS</h3>
               <p>
                 Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o
@@ -293,9 +305,76 @@
               </ul>
             </div>
           </section>
+          <section class="section-content">
+            <p>Si tienes alguna pregunta escríbeme a elmersc11@gmail.com</p>
+            <h3>Música para programar 🤍</h3>
+            <div class="slider">
+              <scroll-container class="slider-container">
+                <scroll-page class="slider-slide" id="video1">
+                  <iframe
+                    class="video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/8DowcVNF0Lk"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </scroll-page>
+                <scroll-page class="slider-slide" id="video2">
+                  <iframe
+                    class="video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/bmVKaAV_7-A"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </scroll-page>
+                <scroll-page class="slider-slide" id="video3">
+                  <iframe
+                    class="video"
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/p0OH206z9Wg"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </scroll-page>
+              </scroll-container>
+              <div class="slider-bullet-list">
+                <a href="#video1" id="bullet" class="bulletActive"></a>
+                <a href="#video2" id="bullet"></a>
+                <a href="#video3" id="bullet"></a>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </main>
     <!-- main -->
+    <script type="text/javascript">
+      let bullets = document.querySelectorAll("#bullet");
+      var manualActive = function (manual) {
+        //remove class
+        bullets.forEach((bullet) => {
+          bullet.classList.remove("bulletActive");
+        });
+
+        //active class
+        bullets[manual].classList.add("bulletActive");
+      };
+
+      bullets.forEach((bullet, index) => {
+        bullet.addEventListener("click", () => {
+          manualActive(index);
+        });
+      });
+    </script>
   </body>
 </html>

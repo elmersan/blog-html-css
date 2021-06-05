@@ -1,0 +1,48 @@
+pre {
+  background: var(--white10);
+  padding-block-start: 4rem;
+  padding-block-end: 4rem;
+  padding-inline-start: 4rem;
+  padding-inline-end: 4rem;
+  font-family: "Nunito";
+  line-height: 24px;
+  color: var(--white30);
+  border-radius: 0.8rem;
+  overflow: auto;
+}
+
+.section-content div {
+  margin-block-end: 4rem;
+}
+
+.section-content {
+  counter-reset: titleList;
+}
+
+.section-content div li {
+  margin-inline-start: 1.7rem;
+}
+
+.section-content div h3 {
+  counter-increment: titleList;
+  margin-block-start: 1.6rem;
+  margin-block-end: 1.6rem;
+}
+
+.section-content div h3::before {
+  content: counter(titleList) ". ";
+}
+
+.section-content ul li {
+  margin-block-end: 1.6rem;
+}
+
+.section-content .image,
+.section-content .image img {
+  max-inline-size: 100%;
+}
+
+.concepts div p:first-of-type,
+.box-model div p:first-of-type {
+  margin-block-end: 1.6rem;
+}

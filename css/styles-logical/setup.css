@@ -2,9 +2,10 @@
   font: var(--headline2);
 }
 
-.setup-image {
+.setup div div.setup-image {
   width: 8rem;
   height: 8rem;
+  margin: 0;
 }
 
 .setup img {

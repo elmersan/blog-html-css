@@ -1,8 +1,13 @@
 @import url("./header.css");
+@import url("./introduction.css");
 @import url("./setup.css");
+@import url("./blockquote.css");
+@import url("./content-main.css");
+@import url("./slider.css");
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -13,8 +18,8 @@ html {
 
 :root {
   /* font */
-  --font-base: "Roboto", sans-serif;
-  --headline1: normal 6rem / 7rem var(--font-base);
+  --font-base: "Nunito", sans-serif;
+  --headline1: bold 6rem / 7rem var(--font-base);
   --headline2: bold 3.2rem / 3.8rem var(--font-base);
   --headline3: bold 2.4rem / 2.8rem var(--font-base);
   --body1: normal 1.6rem / 2.4rem var(--font-base);
@@ -22,12 +27,11 @@ html {
   --button: bold 1.4rem / 2.2rem var(--font-base);
 
   /* colors */
-  --gray30: #212121;
-  --gray20: #424242;
-  --gray: #616161;
-  --purple: #310a90;
-  --green: #42e2b8;
-  --white: #fff;
+  --white30: #fff;
+  --white20: #a5a3a5;
+  --white10: #3a3539;
+  --background: #251f24;
+  --yellow: #fec62e;
 
   /* config */
   --border-radius: 4px;
@@ -36,7 +40,8 @@ html {
 body {
   min-block-size: 100vh;
   font: var(--body1);
-  color: var(--gray20);
+  color: var(--white30);
+  background: var(--background);
 }
 
 a {
@@ -50,24 +55,47 @@ h1 {
 
 h2 {
   font: var(--headline2);
+  margin-block-end: 4rem;
 }
 
-.section-content {
-  counter-reset: titleList;
+h3 {
+  font: var(--headline3);
+  font-weight: 600;
+  position: sticky;
+  top: 0;
+  background: var(--background);
+  margin-block-start: 1.6rem;
+  margin-block-end: 1.6rem;
 }
 
-.section-content div h3 {
-  counter-increment: titleList;
+hr {
+  margin-block-start: 4rem;
+  margin-block-end: 4rem;
 }
 
-.section-content div h3::before {
-  content: counter(titleList) ". ";
+p,
+li {
+  color: var(--white20);
 }
 
-h3::after {
-  content: "";
-  background: var(--gray30);
-  width: 3.2rem;
-  height: 0.4rem;
-  display: block;
+.wrapper {
+  max-inline-size: 70rem;
+  margin: auto;
+}
+
+.main-content {
+  padding-inline-start: 1.6rem;
+  padding-inline-end: 1.6rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .main-content {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1420px) {
+  .wrapper {
+    max-inline-size: 63.6rem;
+  }
 }

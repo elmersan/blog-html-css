@@ -8,6 +8,22 @@
   height: 35rem;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+}
+
+.header-content {
+  position: relative;
+}
+
+header {
+  position: absolute;
+  width: 20.8rem;
+  left: -20.8rem;
+  top: 6.4rem;
+}
+
 header,
 header p {
   font: var(--body2);
@@ -16,4 +32,9 @@ header p {
 summary {
   font: var(--button);
   color: var(--gray);
+}
+
+header li {
+  margin-bottom: 1.6rem;
+  margin-left: 3rem;
 }

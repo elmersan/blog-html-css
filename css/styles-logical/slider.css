@@ -1,0 +1,45 @@
+.slider-container::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.slider-container::-webkit-scrollbar:horizontal {
+  block-size: 0.8rem;
+}
+.slider-container::-webkit-scrollbar-thumb {
+  background-color: var(--white10);
+  border-radius: 20px;
+}
+
+.slider-container {
+  display: block;
+  overflow: auto;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  font-size: 0;
+}
+
+.video {
+  margin: auto;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+
+.slider-bullet-list {
+  text-align: center;
+  margin-block-start: 1.6rem;
+}
+
+.slider-bullet-list a {
+  text-decoration: none;
+  display: inline-block;
+  inline-size: 1.6rem;
+  block-size: 1.6rem;
+  background-color: var(--white10);
+  border-radius: 50%;
+}
+
+a.bulletActive {
+  background-color: var(--white30);
+}

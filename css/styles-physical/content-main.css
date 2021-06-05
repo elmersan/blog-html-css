@@ -21,7 +21,6 @@ pre {
 .section-content div h3 {
   counter-increment: titleList;
   margin: 1.6rem 0;
-  position: relative;
 }
 
 .section-content div h3::before {

@@ -1,11 +1,25 @@
 .hero {
-  background-image: linear-gradient(
-      to top,
-      rgba(255, 255, 255, 0.3),
-      transparent
-    ),
-    url("../images/pattern.png");
-  height: 35rem;
+  background: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
+  block-size: 35rem;
+}
+
+.header {
+  position: sticky;
+  /* top: 0; */
+  inset-block-start: 0;
+}
+
+.header-content {
+  position: relative;
+}
+
+header {
+  inline-size: 19.7rem;
+  position: absolute;
+  /* left: -20.8rem; */
+  inset-inline-start: -20.8rem;
+  /* top: 6.4rem; */
+  inset-block-start: 6.4rem;
 }
 
 header,
@@ -15,5 +29,9 @@ header p {
 
 summary {
   font: var(--button);
-  color: var(--gray);
+}
+
+header li {
+  margin-block-end: 1.6rem;
+  margin-inline-start: 3rem;
 }

@@ -1,0 +1,12 @@
+.introduction {
+  margin-block-start: 6.4rem;
+}
+
+.introduction h1 {
+  margin-block-end: 1.6rem;
+}
+
+.introduction p {
+  font: var(--body1);
+  font-weight: 500;
+}

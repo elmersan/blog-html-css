@@ -36,6 +36,7 @@ h3 {
   top: 0;
   margin-block-start: 1.6rem;
   margin-block-end: 1.6rem;
+  padding-block: 1.2rem;
 }
 
 hr {
@@ -55,7 +56,10 @@ hr {
 
 @media screen and (min-width: 1236px) {
   .main-content {
-    padding: 0;
+    padding-inline-start: 4rem;
+  }
+  .wrapper {
+    max-inline-size: 70rem;
   }
 }
 

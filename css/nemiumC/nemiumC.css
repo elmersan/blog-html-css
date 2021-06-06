@@ -1,0 +1,76 @@
+@import url("./header.css");
+@import url("./introduction.css");
+@import url("./setup.css");
+@import url("./blockquote.css");
+@import url("./content-main.css");
+@import url("./slider.css");
+@import url("./form.css");
+@import url("./footer.css");
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* font */
+  --font-base: "Roboto", sans-serif;
+  --headline1: normal 6rem / 7rem var(--font-base);
+  --headline2: bold 3.2rem / 3.8rem var(--font-base);
+  --headline3: bold 2.4rem / 2.8rem var(--font-base);
+  --body1: normal 1.6rem / 2.4rem var(--font-base);
+  --body2: normal 1.4rem / 2.2rem var(--font-base);
+  --button: bold 1.4rem / 2.2rem var(--font-base);
+
+  /* colors */
+  --gray30: #212121;
+  --gray20: #424242;
+  --gray10: #808080;
+  --gray5: #e5e5e5;
+  --gray: #616161;
+  --white: #fff;
+  --black: #000;
+  --blackSecondary: #212429;
+
+  /* config */
+  --border-radius: 4px;
+}
+
+body {
+  font: var(--body1);
+  color: var(--gray30);
+}
+
+a {
+  color: var(--gray20);
+}
+
+h1 {
+  font: var(--headline2);
+}
+
+h2 {
+  font: var(--headline2);
+}
+
+h3 {
+  font: var(--headline3);
+  background: var(--white);
+}
+
+p,
+li {
+  color: var(--gray20);
+}
+
+@media screen and (min-width: 1236px) {
+  h1 {
+    font: var(--headline1);
+  }
+}

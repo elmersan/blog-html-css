@@ -1,0 +1,15 @@
+.form input {
+  border: 0.1rem solid var(--white30);
+  color: var(--white30);
+  font: var(--body1);
+}
+
+::placeholder {
+  color: var(--white20);
+}
+
+.form input[type="submit"] {
+  background: var(--buttonColor);
+  font: var(--body1);
+  color: var(--white30);
+}

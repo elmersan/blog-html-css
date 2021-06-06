@@ -42,6 +42,11 @@ header li {
   margin-inline-start: 3rem;
 }
 
+nav p,
+summary {
+  margin-block-end: 1.6rem;
+}
+
 @media screen and (min-width: 1236px) {
   .hero {
     block-size: 35rem;

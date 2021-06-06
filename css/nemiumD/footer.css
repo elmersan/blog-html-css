@@ -1,0 +1,8 @@
+.footer {
+  background: var(--blackSecondary);
+}
+
+.footer-content p {
+  color: var(--white);
+  font: var(--headline3);
+}

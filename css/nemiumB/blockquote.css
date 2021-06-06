@@ -1,0 +1,8 @@
+blockquote {
+  background: var(--white10);
+}
+
+blockquote p {
+  font: var(--headline3);
+  color: var(--white30);
+}

@@ -1,12 +1,9 @@
 pre {
-  background: var(--white10);
   padding-block-start: 4rem;
   padding-block-end: 4rem;
   padding-inline-start: 4rem;
   padding-inline-end: 4rem;
-  font-family: "Nunito";
   line-height: 24px;
-  color: var(--white30);
   border-radius: 0.8rem;
   overflow: auto;
 }

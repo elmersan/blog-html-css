@@ -1,0 +1,16 @@
+.form input {
+  inline-size: 100%;
+  padding-block: 1.2rem;
+  padding-inline: 1.6rem;
+  background: none;
+  outline: none;
+  border-radius: 0.8rem;
+  margin-block-end: 2.4rem;
+}
+
+.form input[type="submit"] {
+  font: var(--body1);
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}

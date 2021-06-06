@@ -1,0 +1,63 @@
+@import url("./header.css");
+@import url("./introduction.css");
+@import url("./setup.css");
+@import url("./blockquote.css");
+@import url("./content-main.css");
+@import url("./slider.css");
+@import url("./form.css");
+@import url("./footer.css");
+
+:root {
+  /* font */
+  --font-base: "Nunito", sans-serif;
+  --headline1: bold 6rem / 7rem var(--font-base);
+  --headline2: bold 3.2rem / 3.8rem var(--font-base);
+  --headline3: bold 2.4rem / 2.8rem var(--font-base);
+  --body1: normal 1.6rem / 2.4rem var(--font-base);
+  --body2: normal 1.4rem / 2.2rem var(--font-base);
+  --button: bold 1.4rem / 2.2rem var(--font-base);
+
+  /* colors */
+  --white30: #fff;
+  --white20: #a5a3a5;
+  --white10: #3a3539;
+  --background: #251f24;
+  --black: #000;
+  --buttonColor: #157efb;
+  /* config */
+  --border-radius: 4px;
+}
+
+body {
+  font: var(--body1);
+  color: var(--white30);
+  background: var(--background);
+}
+
+a {
+  color: var(--white20);
+}
+
+h1 {
+  font: var(--headline2);
+}
+
+h2 {
+  font: var(--headline2);
+}
+
+h3 {
+  font: var(--headline3);
+  background: var(--background);
+}
+
+p,
+li {
+  color: var(--white20);
+}
+
+@media screen and (min-width: 1236px) {
+  h1 {
+    font: var(--headline1);
+  }
+}

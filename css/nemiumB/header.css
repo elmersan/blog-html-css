@@ -1,0 +1,45 @@
+.hero {
+  background: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
+}
+
+.theme p {
+  font: var(--body2);
+}
+
+.theme .variants button {
+  font: var(--button);
+}
+
+header,
+header p {
+  font: var(--body2);
+}
+
+summary {
+  font: var(--button);
+}
+
+header::-webkit-scrollbar-thumb {
+  background-color: var(--white10);
+}
+
+.header-content p {
+  color: var(--white30);
+}
+
+.theme .variants button {
+  font: var(--button);
+  color: var(--white20);
+  cursor: pointer;
+  border-radius: 0.4rem;
+}
+
+.theme .variants button:hover {
+  background: var(--black);
+  color: var(--white30);
+}
+
+.theme .variants button.themeActive {
+  background: var(--black);
+  color: var(--white30);
+}

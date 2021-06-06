@@ -1,0 +1,7 @@
+.setup h2 {
+  font: var(--headline2);
+}
+
+.setup h3 {
+  font: var(--headline3);
+}

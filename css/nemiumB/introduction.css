@@ -7,5 +7,6 @@
 }
 
 .introduction p {
+  font: var(--body1);
   font-weight: 500;
 }

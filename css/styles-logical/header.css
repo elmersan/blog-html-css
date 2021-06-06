@@ -1,37 +1,71 @@
 .hero {
-  background: linear-gradient(96.07deg, #314755 30.63%, #26a0da 102.18%);
-  block-size: 35rem;
-}
-
-.header {
-  position: sticky;
-  /* top: 0; */
-  inset-block-start: 0;
+  block-size: 9.6rem;
 }
 
 .header-content {
-  position: relative;
+  padding-block-start: 7rem;
+  padding-inline: 1.6rem;
 }
 
-header {
-  inline-size: 19.7rem;
-  position: absolute;
-  /* left: -20.8rem; */
-  inset-inline-start: -20.8rem;
-  /* top: 6.4rem; */
-  inset-block-start: 6.4rem;
+.theme {
+  margin-block-end: 10.4rem;
 }
 
-header,
-header p {
-  font: var(--body2);
+.theme p {
+  margin-block-end: 1.6rem;
 }
 
-summary {
-  font: var(--button);
+.theme .variants button {
+  padding-block: 0.8rem;
+  padding-inline: 0.8rem;
+  display: block;
+  inline-size: 100%;
+  background: none;
+  outline: none;
+  border: none;
+  text-align: start;
+}
+
+header::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+header::-webkit-scrollbar:vertical {
+  inline-size: 0.8rem;
+}
+header::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
 }
 
 header li {
   margin-block-end: 1.6rem;
   margin-inline-start: 3rem;
+}
+
+@media screen and (min-width: 1236px) {
+  .hero {
+    block-size: 35rem;
+  }
+
+  .header {
+    position: sticky;
+    /* top: 0; */
+    inset-block-start: 0;
+  }
+
+  .header-content {
+    position: relative;
+  }
+
+  header {
+    inline-size: 20.7rem;
+    position: absolute;
+    inset-inline-start: -22.8rem;
+    inset-block-start: 6.4rem;
+    max-block-size: calc(100vh - 15rem);
+    overflow: auto;
+    padding-block-end: 10rem;
+    padding-inline-end: 4rem;
+    z-index: 1;
+  }
 }

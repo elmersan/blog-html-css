@@ -4,6 +4,8 @@
 @import url("./blockquote.css");
 @import url("./content-main.css");
 @import url("./slider.css");
+@import url("./form.css");
+@import url("./footer.css");
 
 html {
   font-size: 62.5%;
@@ -16,54 +18,22 @@ html {
   padding: 0;
 }
 
-:root {
-  /* font */
-  --font-base: "Nunito", sans-serif;
-  --headline1: bold 6rem / 7rem var(--font-base);
-  --headline2: bold 3.2rem / 3.8rem var(--font-base);
-  --headline3: bold 2.4rem / 2.8rem var(--font-base);
-  --body1: normal 1.6rem / 2.4rem var(--font-base);
-  --body2: normal 1.4rem / 2.2rem var(--font-base);
-  --button: bold 1.4rem / 2.2rem var(--font-base);
-
-  /* colors */
-  --white30: #fff;
-  --white20: #a5a3a5;
-  --white10: #3a3539;
-  --background: #251f24;
-  --yellow: #fec62e;
-
-  /* config */
-  --border-radius: 4px;
-}
-
 body {
   min-block-size: 100vh;
-  font: var(--body1);
-  color: var(--white30);
-  background: var(--background);
 }
 
 a {
-  color: var(--black);
   text-decoration: none;
 }
 
-h1 {
-  font: var(--headline1);
-}
-
 h2 {
-  font: var(--headline2);
   margin-block-end: 4rem;
 }
 
 h3 {
-  font: var(--headline3);
   font-weight: 600;
   position: sticky;
   top: 0;
-  background: var(--background);
   margin-block-start: 1.6rem;
   margin-block-end: 1.6rem;
 }
@@ -71,11 +41,6 @@ h3 {
 hr {
   margin-block-start: 4rem;
   margin-block-end: 4rem;
-}
-
-p,
-li {
-  color: var(--white20);
 }
 
 .wrapper {
@@ -88,7 +53,7 @@ li {
   padding-inline-end: 1.6rem;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1236px) {
   .main-content {
     padding: 0;
   }

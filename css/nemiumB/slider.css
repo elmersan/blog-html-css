@@ -1,0 +1,11 @@
+.slider-container::-webkit-scrollbar-thumb {
+  background-color: var(--white10);
+}
+
+.slider-bullet-list a {
+  background-color: var(--white10);
+}
+
+a.bulletActive {
+  background-color: var(--white30);
+}

@@ -1,0 +1,13 @@
+.footer {
+  z-index: 3;
+}
+
+.footer-content p {
+  padding-block-start: 3rem;
+}
+
+.footer-content {
+  block-size: 8.4rem;
+  text-align: center;
+  margin-block-start: 4rem;
+}

@@ -9,14 +9,11 @@ blockquote {
   padding-inline-start: 1.6rem;
   padding-inline-end: 1.6rem;
   line-height: 2.4rem;
-  background: var(--white10);
   border-radius: 0.8rem;
 }
 
 blockquote p {
-  font: var(--headline3);
   font-weight: normal;
-  color: var(--white30);
 }
 
 blockquote p:first-of-type {
